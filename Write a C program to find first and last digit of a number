@@ -1,0 +1,14 @@
+#include<stdio.h>
+#inclue<math.h>
+int main()
+{
+int n,firstdigit,lastdigit,digits;
+printf("Enter any number:");
+scanf("%d",&n);
+lastdigit=n%10;
+digits=(int)log10(n);
+firstdigit=(int)(n/pow(10,digits));
+printf("First digit=%d\n",firstdigit);
+printf("Last digit=%d\n",lastdigit);
+return0;
+}
